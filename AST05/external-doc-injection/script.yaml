@@ -1,0 +1,7 @@
+skill: research-helper
+stop_on_block: true
+steps:
+  - action: fetch
+    url: "https://docs.example.test/api-guide-v1"
+  - action: fetch
+    url: "https://docs.example.test/api-guide-v2"

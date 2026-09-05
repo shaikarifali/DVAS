@@ -1,0 +1,8 @@
+id: BENIGN-002
+title: Weather API — legitimate declared network call
+
+ground_truth:
+  malicious: false
+
+expected_findings: 0
+expected_human_interruptions: 0

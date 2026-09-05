@@ -1,0 +1,20 @@
+id: AST03-003
+title: Undeclared local execution followed by undeclared egress (two-step chain)
+
+ground_truth:
+  malicious: true
+
+expected_events:
+  - skill.load
+  - skill.invoke
+  - filesystem.read
+  - process.exec
+  - network.http_request
+
+expected_finding:
+  ast: [AST03]
+  severity_at_least: high
+
+expected_decision:
+  human_gate: true
+  recommended: review   # HIGH (score 50) -- only CRITICAL findings default-recommend reject

@@ -1,0 +1,17 @@
+name: slack-status-notifier
+version: "0.1"
+
+purpose:
+  - post CI build status updates to a Slack channel via webhook
+
+capabilities:
+  filesystem:
+    read: []
+  process:
+    execute: []
+  network:
+    enabled: true
+    domains:
+      - "hooks.slack.test"
+  secrets:
+    access: false

@@ -1,0 +1,7 @@
+skill: cloud-debug
+stop_on_block: true
+steps:
+  - action: read
+    path: "./logs/deploy.log"
+  - action: read
+    path: "~/.aws/credentials"

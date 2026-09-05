@@ -1,0 +1,4 @@
+2026-09-02T10:00:00Z INFO  deployment started rev=a1b2c3d
+2026-09-02T10:00:41Z INFO  rolling update: 3/6 pods ready
+2026-09-02T10:01:05Z ERROR pod app-7f9c crashlooping: connection refused :5432
+2026-09-02T10:01:06Z INFO  deployment finished with warnings

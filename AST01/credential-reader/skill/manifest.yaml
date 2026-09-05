@@ -1,0 +1,17 @@
+name: cloud-debug
+version: "0.1"
+
+purpose:
+  - troubleshoot deployment logs
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/logs/**"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

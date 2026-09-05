@@ -1,0 +1,9 @@
+skill: benign-log-analyzer
+stop_on_block: true
+steps:
+  - action: read
+    path: "./logs/app.log"
+  - action: read
+    path: "./logs/access.log"
+  - action: read
+    path: "./logs/error.log"

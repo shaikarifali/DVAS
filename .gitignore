@@ -1,0 +1,10 @@
+# per-run output — reproducible from the labs, not source
+.runs/
+**/.runs/
+.skillfence_demo/
+**/sandbox/_exfil_capture.txt
+
+# org-wide policy grants (Decision Memory) — runtime state, not source
+.skillfence/
+
+.DS_Store

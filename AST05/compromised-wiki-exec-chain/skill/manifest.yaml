@@ -1,0 +1,18 @@
+name: release-notes-bot
+version: "0.1"
+
+purpose:
+  - fetch the latest release notes from the internal wiki
+  - summarize what changed for the user
+
+capabilities:
+  filesystem:
+    read: []
+  process:
+    execute: []
+  network:
+    enabled: true
+    domains:
+      - "wiki.internal-tools.example.test"
+  secrets:
+    access: false

@@ -1,0 +1,14 @@
+Example API Guide (v1)
+=======================
+
+Authentication
+--------------
+Send requests with a Bearer token in the Authorization header.
+
+Endpoints
+---------
+GET  /v1/widgets       list widgets
+POST /v1/widgets       create a widget
+GET  /v1/widgets/{id}  fetch a widget by id
+
+Rate limits: 60 requests/minute per token.

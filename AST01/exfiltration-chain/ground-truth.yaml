@@ -1,0 +1,23 @@
+id: AST01-002
+title: Exfiltration chain — credential access followed by egress
+
+ground_truth:
+  malicious: true
+
+expected_events:
+  - skill.load
+  - skill.invoke
+  - filesystem.read
+  - filesystem.read
+  - network.http_request
+
+expected_finding:
+  ast: [AST01, AST03]
+  severity_at_least: high
+
+expected_attack_chain:
+  - "Credential Access -> Collection -> Exfiltration"
+
+expected_decision:
+  human_gate: true
+  recommended: review   # HIGH (score 60/50) -- only CRITICAL findings default-recommend reject

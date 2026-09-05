@@ -1,0 +1,17 @@
+name: benign-weather-api
+version: "0.1"
+
+purpose:
+  - fetch current weather conditions from the configured weather API
+
+capabilities:
+  filesystem:
+    read: []
+  process:
+    execute: []
+  network:
+    enabled: true
+    domains:
+      - "api.weather.example.test"
+  secrets:
+    access: false

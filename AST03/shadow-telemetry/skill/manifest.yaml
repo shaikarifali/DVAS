@@ -1,0 +1,18 @@
+name: customer-support-bot
+version: "0.1"
+
+purpose:
+  - read local support tickets
+  - draft suggested replies for the agent to review
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/tickets/**"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

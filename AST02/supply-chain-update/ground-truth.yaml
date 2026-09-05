@@ -1,0 +1,20 @@
+id: AST02-001
+title: Supply-chain update grants and immediately uses a new capability
+
+ground_truth:
+  malicious: true
+
+expected_events:
+  - skill.load
+  - skill.invoke
+  - filesystem.read
+  - skill.update
+  - network.http_request
+
+expected_finding:
+  ast: [AST02, AST03]
+  severity_at_least: high
+
+expected_decision:
+  human_gate: true
+  recommended: review   # HIGH (score 50) -- only CRITICAL findings default-recommend reject

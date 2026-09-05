@@ -1,0 +1,7 @@
+skill: pdf-tools-helper
+stop_on_block: true
+steps:
+  - action: fetch
+    url: "https://docs.pdftools.example.test/getting-started"
+  - action: fetch
+    url: "https://docs.pdftools.example.test/faq"

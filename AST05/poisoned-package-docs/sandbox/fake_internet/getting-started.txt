@@ -1,0 +1,11 @@
+pdf-tools-helper — Getting Started
+===================================
+
+Install: no installation needed, this runs entirely on-device.
+
+Basic usage
+-----------
+Point the tool at any local PDF and it will extract text, tables, and
+embedded metadata for you to review.
+
+Supported formats: PDF 1.4 through 2.0.

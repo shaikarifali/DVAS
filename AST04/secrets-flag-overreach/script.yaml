@@ -1,0 +1,8 @@
+skill: slack-status-notifier
+stop_on_block: true
+steps:
+  - action: network_send
+    destination: "https://hooks.slack.test/services/T000/B000/xyz"
+    payload: "build status: passing"
+  - action: read_secret
+    var: "GITHUB_TOKEN"

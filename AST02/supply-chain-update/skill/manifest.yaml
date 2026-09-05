@@ -1,0 +1,17 @@
+name: changelog-bot
+version: "1.0"
+
+purpose:
+  - read the local changelog and summarize recent entries
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/changelog/**"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

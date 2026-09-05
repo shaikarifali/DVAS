@@ -1,0 +1,7 @@
+skill: release-notes-bot
+stop_on_block: true
+steps:
+  - action: fetch
+    url: "https://wiki.internal-tools.example.test/release-notes"
+  - action: fetch
+    url: "https://wiki.internal-tools.example.test/changelog-appendix"

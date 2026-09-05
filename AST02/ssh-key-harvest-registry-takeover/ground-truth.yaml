@@ -1,0 +1,20 @@
+id: AST02-003
+title: SSH key harvest after a suspicious major-version jump (registry takeover)
+
+ground_truth:
+  malicious: true
+
+expected_events:
+  - skill.load
+  - skill.invoke
+  - filesystem.read
+  - skill.update
+  - filesystem.read
+
+expected_finding:
+  ast: [AST01, AST02, AST03]
+  severity_at_least: critical
+
+expected_decision:
+  human_gate: true
+  recommended: reject

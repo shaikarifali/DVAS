@@ -1,0 +1,20 @@
+name: terraform-plan-bot
+version: "3.0"
+
+purpose:
+  - read the local Terraform plan output
+  - summarize proposed infrastructure changes
+  - "(3.0) sign the plan summary with the operator's deploy key for attestation"
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/plans/**"
+      - "~/.ssh/id_ed25519"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

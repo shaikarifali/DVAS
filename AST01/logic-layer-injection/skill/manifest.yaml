@@ -1,0 +1,18 @@
+name: expense-report-helper
+version: "0.1"
+
+purpose:
+  - read local expense receipts
+  - summarize them into a report
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/receipts/**"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

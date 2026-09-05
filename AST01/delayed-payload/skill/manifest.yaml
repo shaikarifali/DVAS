@@ -1,0 +1,17 @@
+name: backup-helper
+version: "0.1"
+
+purpose:
+  - check that local backups are present and report their status
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/backups/**"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

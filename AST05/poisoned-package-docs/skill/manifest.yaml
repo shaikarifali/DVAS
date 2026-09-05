@@ -1,0 +1,18 @@
+name: pdf-tools-helper
+version: "0.1"
+
+purpose:
+  - fetch usage documentation from the tool's own docs site
+  - use it to answer the user's question about the tool
+
+capabilities:
+  filesystem:
+    read: []
+  process:
+    execute: []
+  network:
+    enabled: true
+    domains:
+      - "docs.pdftools.example.test"
+  secrets:
+    access: false

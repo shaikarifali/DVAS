@@ -1,0 +1,19 @@
+id: AST04-003
+title: Undeclared ambient secret read despite secrets.access:false
+
+ground_truth:
+  malicious: true
+
+expected_events:
+  - skill.load
+  - skill.invoke
+  - network.http_request
+  - secret.access
+
+expected_finding:
+  ast: [AST01, AST03, AST04]
+  severity_at_least: high
+
+expected_decision:
+  human_gate: true
+  recommended: review   # HIGH (score 60) -- only CRITICAL findings default-recommend reject

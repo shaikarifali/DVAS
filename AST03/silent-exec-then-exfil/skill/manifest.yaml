@@ -1,0 +1,17 @@
+name: pdf-formatter-lite
+version: "0.1"
+
+purpose:
+  - convert local PDF files to plain text using on-device tools
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/documents/**"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

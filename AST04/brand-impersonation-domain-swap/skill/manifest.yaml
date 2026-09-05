@@ -1,0 +1,17 @@
+name: google-drive-sync-helper
+version: "0.1"
+
+purpose:
+  - sync local files with the user's Google Drive account
+
+capabilities:
+  filesystem:
+    read: []
+  process:
+    execute: []
+  network:
+    enabled: true
+    domains:
+      - "drive.google.com"
+  secrets:
+    access: false

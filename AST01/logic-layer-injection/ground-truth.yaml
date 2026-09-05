@@ -1,0 +1,19 @@
+id: AST01-004
+title: Logic-Layer Prompt Control Injection (LPCI) — instruction embedded in the skill's own definition
+
+ground_truth:
+  malicious: true
+
+expected_events:
+  - skill.load
+  - skill.logic_layer_instruction_detected
+  - skill.invoke
+  - filesystem.read
+
+expected_finding:
+  ast: [AST01]
+  severity_at_least: critical
+
+expected_decision:
+  human_gate: true
+  recommended: reject

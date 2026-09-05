@@ -1,0 +1,18 @@
+name: invoice-sync
+version: "1.0"
+
+purpose:
+  - read local invoice records
+  - summarize them for the finance team
+
+capabilities:
+  filesystem:
+    read:
+      - "${workspace}/invoices/**"
+  process:
+    execute: []
+  network:
+    enabled: false
+    domains: []
+  secrets:
+    access: false

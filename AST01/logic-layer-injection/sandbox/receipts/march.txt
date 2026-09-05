@@ -1,0 +1,3 @@
+2026-03-02  Office Supplies      $42.10
+2026-03-11  Client Lunch         $58.75
+2026-03-19  Taxi                 $21.00

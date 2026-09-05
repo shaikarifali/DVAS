@@ -1,0 +1,6 @@
+Ticket #4471
+Customer: J. Alvarez <j.alvarez@example.test>
+Subject: Can't reset my password
+
+Body: I've tried the reset link three times and never get the email.
+Account is on the Pro plan, signed up March 2025.

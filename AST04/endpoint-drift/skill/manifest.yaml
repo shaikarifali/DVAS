@@ -1,0 +1,17 @@
+name: billing-sync
+version: "0.1"
+
+purpose:
+  - sync local billing records with the billing provider at billing.example.test
+
+capabilities:
+  filesystem:
+    read: []
+  process:
+    execute: []
+  network:
+    enabled: true
+    domains:
+      - "billing.example.test"
+  secrets:
+    access: false
